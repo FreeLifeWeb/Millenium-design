@@ -1,3 +1,48 @@
+@font-face {
+    font-family: 'MontserratLight';
+    src: url('../fonts/MontserratLight.eot');
+    src: url('../fonts/MontserratLight.woff2') format('woff2'),
+        url('../fonts/MontserratLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MontserratBold';
+    src: url('../fonts/MontserratBold.eot');
+    src: url('../fonts/MontserratBold.woff2') format('woff2'),
+        url('../fonts/MontserratBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MontserratRegular';
+    src: url('../fonts/MontserratRegular.eot');
+    src: url('../fonts/MontserratRegular.woff2') format('woff2'),
+        url('../fonts/MontserratRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MontserratMedium';
+    src: url('../fonts/MontserratMedium.eot');
+    src: url('../fonts/MontserratMedium.woff2') format('woff2'),
+        url('../fonts/MontserratMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MontserratExtraBold';
+    src: url('../fonts/MontserratExtraBold.eot');
+    src: url('../fonts/MontserratExtraBold.woff2') format('woff2'),
+        url('../fonts/MontserratExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -30,6 +75,7 @@
 .header__label {
     margin: 0;
     padding: 0;
+    height: 175px;
     margin-right: auto;
 }
 
@@ -52,6 +98,7 @@
 }
 
 .header__link {
+    font-family: 'MontserratRegular', 'sans-serif';
     text-decoration: none;
     color: white;
     font-size: 28px;
@@ -93,19 +140,37 @@
 }
 
 .about__title {
+    font-family: 'MontserratRegular', 'sans-serif';
     color: #d3a167;
-    font-size: 42px;
+    margin-top: 0;
+    font-size: 36px;
 }
 
 .about__description {
+    font-family: 'MontserratLight', 'sans-serif';
+    color: white;
+    font-size: 24px;
+    max-width: 620px;
+    line-height: 1.4;
+    width: 100%;
+    margin: 0;
+}
+
+.about__description-team {
+    font-family: 'MontserratLight', 'sans-serif';
+    display: flex;
+    justify-content: flex-start;
     color: white;
     font-size: 24px;
     max-width: 550px;
     line-height: 1.5;
     width: 100%;
+    margin: 0;
+    margin-bottom: 30px;
 }
 
 .about__contacts {
+    font-family: 'MontserratLight', 'sans-serif';
     background: linear-gradient(
         to top,
         var(--buttonFinish),
@@ -134,6 +199,7 @@
 }
 
 .about__gallery {
+    font-family: 'MontserratRegular', 'sans-serif';
     background-color: white;
     font-size: 22px;
     padding: 15px 38px;
@@ -204,6 +270,7 @@
     justify-content: center;
     margin: 25px 0;
     height: 100px;
+    margin: 0;
 }
 
 .about__controls button {
@@ -223,6 +290,7 @@
 
 .about__controls-previous {
     position: relative;
+    font-family: 'MontserratLight', 'sans-serif';
 }
 
 .about__controls-previous::before {
@@ -246,6 +314,7 @@
 
 .about__controls-next {
     position: relative;
+    font-family: 'MontserratLight', 'sans-serif';
 }
 
 .about__controls-next::before {
@@ -291,7 +360,7 @@
 
 /* SECTION AREAS */
 .areas {
-    background-image: url('../public/image/areas/Section.png');
+    /* background-image: url('../public/image/areas/Section.png'); */
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -305,6 +374,7 @@
 }
 
 .areas__title {
+    font-family: 'MontserratRegular', 'sans-serif';
     color: #d09756;
     font-size: 42px;
     margin: 0;
@@ -361,7 +431,7 @@
 }
 
 .areas__bottom {
-    background-color: white;
+    background-color: #474a50;
     display: flex;
     justify-content: center;
     border-bottom-left-radius: 15px;
@@ -369,9 +439,10 @@
 }
 
 .areas__subtitle {
+    font-family: 'MontserratRegular', 'sans-serif';
     font-size: 22px;
     font-weight: 600;
-    color: #5a5456;
+    color: white;
 }
 
 /* SECTION LAST PROJECT */
@@ -392,15 +463,17 @@
 }
 
 .project__title {
-    font-size: 70px;
+    font-family: 'MontserratRegular', 'sans-serif';
+    font-size: 50px;
     font-weight: 600;
     color: #d3a167;
 }
 
 .project__description {
+    font-family: 'MontserratRegular', 'sans-serif';
     font-size: 28px;
     font-weight: 600;
-    color: var(--latune);
+    color: #d3a167;
 }
 
 .project__gallery {
@@ -488,6 +561,7 @@
 }
 
 .option__subtitle {
+    font-family: 'MontserratRegular', 'sans-serif';
     text-align: center;
     color: white;
     font-weight: 600;
@@ -495,13 +569,16 @@
 }
 
 .option__description {
+    font-family: 'MontserratLight', 'sans-serif';
     color: white;
     font-size: 20px;
     line-height: 1.5;
     text-align: center;
+    margin-bottom: auto;
 }
 
 .option__link {
+    font-family: 'MontserratLight', 'sans-serif';
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -531,7 +608,7 @@
 /* SECTION REPUTATION */
 
 .reputation {
-    background-image: url('../public/image/reputation/background.png');
+    /* background-image: url('../public/image/reputation/background.png'); */
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -565,21 +642,24 @@
 }
 
 .reputation__statistic {
+    font-family: 'MontserratLight', 'sans-serif';
     font-size: 34px;
     font-weight: 800;
     color: #745f3d;
 }
 
 .reputation__description {
-    font-size: 24px;
+    font-family: 'MontserratLight', 'sans-serif';
+    font-size: 34px;
     color: #745f3d;
 }
 
 /* SECTION TEAM */
 .team {
-    background-image: url('../public/image/areas/Section.png');
+    /* background-image: url('../public/image/areas/Section.png'); */
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: #474a50;
 }
 
 .team__container {
@@ -603,14 +683,15 @@
 }
 
 .team__title {
-    font-size: 36px;
-    color: #745f3d;
+    font-family: 'MontserratRegular', 'sans-serif';
+    font-size: 46px;
+    color: #d3a167;
 }
 
 /* SECTION SLOGAN */
 
 .slogan {
-    background-image: url(../public/image/slogan/background.png);
+    /* background-image: url(../public/image/slogan/background.png); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -626,13 +707,15 @@
 }
 
 .slogan__description {
-    font-size: 40px;
+    font-family: 'MontserratRegular', 'sans-serif';
+    font-size: 35px;
     text-align: center;
     font-weight: 700;
     color: #5a5456;
 }
 
 .slogan__author {
+    font-family: 'MontserratRegular', 'sans-serif';
     font-size: 20px;
     color: #5a5456;
 }
@@ -659,6 +742,7 @@
 }
 
 .footer__question {
+    font-family: 'MontserratRegular', 'sans-serif';
     font-weight: 700;
     color: var(--buttonStart);
     font-size: 32px;
@@ -667,6 +751,7 @@
 }
 
 .footer__description {
+    font-family: 'MontserratRegular', 'sans-serif';
     color: white;
     font-size: 24px;
     cursor: pointer;
@@ -677,6 +762,7 @@
 }
 
 .footer__follow {
+    font-family: 'MontserratRegular', 'sans-serif';
     font-size: 24px;
     color: var(--buttonStart);
 }
@@ -721,12 +807,14 @@
 }
 
 .footer__input {
+    font-family: 'MontserratRegular', 'sans-serif';
     padding: 15px 40px;
     border: none;
     border-radius: 25px;
 }
 
 .footer__textarea {
+    font-family: 'MontserratRegular', 'sans-serif';
     padding: 15px 40px;
     min-height: 200px;
     height: 100%;
@@ -736,6 +824,7 @@
 }
 
 .footer__button {
+    font-family: 'MontserratLight', 'sans-serif';
     background: linear-gradient(to top, #894e17, #d3a167);
     font-size: 22px;
     padding: 15px 20px;
@@ -779,6 +868,7 @@
 }
 
 .footer__menu-item a {
+    font-family: 'MontserratRegular', 'sans-serif';
     text-decoration: none;
     color: white;
     font-size: 28px;
