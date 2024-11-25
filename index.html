@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="styles/style.css" />
         <link rel="stylesheet" href="styles/media.css" />
         <script src="./scripts/script.js" defer></script>
+        <script src="./scripts/sendMessage.js" defer></script>
         <title>Millenium</title>
     </head>
     <body>
@@ -42,15 +43,24 @@
                             Комплектация интерьера под ключ
                         </h2>
                         <p class="about__description">
-                            Наша миссия — создавать удобное и комфортное
-                            пространство для жизни. Комплектация — это ключевой
-                            этап реализации дизайн-проекта, включающий подбор,
-                            закупку и доставку всех материалов: отделка, мебель,
-                            освещение и декор. Мы обеспечиваем точное
-                            соответствие проекту, контроль бюджета и сроков,
-                            освобождая вас от лишних забот.
+                            Мы являемся проводниками в мире дизайна от картинки
+                            до ее реализации.
                         </p>
-                        <p class="about__description-team">Команда Millenium</p>
+                        <p class="about__description">
+                            Наша миссия — реализовывать и создавать удобное,
+                            эргономичное пространство для жизни.
+                        </p>
+                        <p class="about__description">
+                            Основное направление бюро «Milleniume» - (везде где
+                            название закладываем активные ссылки) снабдить ваш
+                            дизайн-проект существующими материалами на рынке в
+                            соответствии с заложенной концепцией и бюджетом.
+                        </p>
+                        <p class="about__description">
+                            При любом квартирном ремонте, расходным материалом
+                            являются нервные клетки,а мы их сбережем.
+                        </p>
+                        <!-- <p class="about__description-team">Команда Millenium</p> -->
                         <div class="about__buttons">
                             <button class="about__contacts">
                                 Связаться с нами
@@ -82,13 +92,25 @@
                             <div class="about__controls"></div>
                         </div>
                     </div>
-                    <div class="about__right"></div>
+                    <div class="about__right">
+                        <img
+                            src="./public/image/image1.jpeg"
+                            alt="Image 1"
+                            class="fade-image"
+                        />
+                        <img
+                            src="./public/image/image2.jpeg"
+                            alt="Image 2"
+                            class="fade-image"
+                        />
+                    </div>
                 </div>
             </section>
             <!-- SECTION AREAS WE OFFER OUR SERVICE -->
             <section class="areas">
                 <div class="container container__areas">
-                    <h2 class="areas__title">Где мы создаём уют</h2>
+                    <h2 class="areas__title">Наш авторский продукт</h2>
+                    <h2 class="areas__title">С любовью и заботой о Вас!</h2>
                     <ul class="areas__list">
                         <li class="areas__item">
                             <div class="areas__top areas__first"></div>
@@ -110,12 +132,12 @@
                                 </p>
                             </div>
                         </li>
-                        <li class="areas__item">
+                        <!-- <li class="areas__item">
                             <div class="areas__top areas__fourth"></div>
                             <div class="areas__bottom">
                                 <p class="areas__subtitle">Cafe/Restaurant</p>
                             </div>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </section>
@@ -127,6 +149,22 @@
                         Создаём пространство, где живёт вдохновение
                     </p>
                     <div class="project__gallery">
+                        <div class="project__section">
+                            <div class="project__photo-big">
+                                <img
+                                    class="project__img-big"
+                                    src="./public/image/project/big6.png"
+                                    alt="picture"
+                                />
+                            </div>
+                            <div class="project__photo-small">
+                                <img
+                                    class="project__img-small"
+                                    src="./public/image/project/small6.png"
+                                    alt="picture"
+                                />
+                            </div>
+                        </div>
                         <div class="project__section">
                             <div class="project__photo-small">
                                 <img
@@ -221,15 +259,12 @@
                                 alt=""
                             />
                             <h2 class="option__subtitle">
-                                Дизайн и планирование
+                                Снабжение дизайн-проекта
                             </h2>
                             <p class="option__description">
-                                Мы помогаем создать уютное пространство для
-                                жизни, начиная с идеи и концепции до полной
-                                реализации. Наши специалисты подберут отделочные
-                                материалы, мебель, освещение и другие элементы
-                                интерьера, чтобы реализовать вашу мечту о
-                                комфортном доме.
+                                мы снабдим ваш дом всем необходимым для
+                                реализации дизайн-проекта не уходя от концепции
+                                и заложенного бюджета
                             </p>
                             <a class="option__link" href="#"
                                 >Связаться с нами
@@ -254,15 +289,11 @@
                                 alt=""
                             />
                             <h2 class="option__subtitle">
-                                Индивидуальные решения
+                                Декорирование дизайн-проект
                             </h2>
                             <p class="option__description">
-                                Мы предлагаем индивидуальный подбор материалов и
-                                мебели, составление спецификаций и мониторинг
-                                цен. Наши специалисты составят полную смету и
-                                организуют процесс закупки, чтобы все элементы
-                                дизайна соответствовали концепции и укладывались
-                                в ваш бюджет.
+                                обновим существующий ремонт без масштабного
+                                вмешательства и длительных ремонтных работ.
                             </p>
                             <a class="option__link" href="#"
                                 >Связаться с нами
@@ -286,16 +317,39 @@
                                 src="./public/image/options/design.svg"
                                 alt=""
                             />
-                            <h2 class="option__subtitle">
-                                Мебелирование и декорация
-                            </h2>
+                            <h2 class="option__subtitle">Авторский надзор</h2>
                             <p class="option__description">
-                                Мы подберем корпусную и отдельно стоящую мебель,
-                                текстиль, предметы интерьера и арт-объекты,
-                                чтобы ваш дом был завершен до мельчайших
-                                деталей. Включает оформление спецификаций и
-                                организацию поставок для соблюдения сроков и
-                                качества.
+                                обеспечим контроль выполнения работ согласно
+                                дизайн-проекту на вашем объекте
+                            </p>
+
+                            <a class="option__link" href="#"
+                                >Связаться с нами
+                                <svg
+                                    class="option__angel"
+                                    viewBox="0 0 25 25"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        class="option__angel-color"
+                                        d="M9.32849 16.6099L13.9222 12.0161L9.32849 7.42236L10.7347 6.01611L16.7347 12.0161L10.7347 18.0161L9.32849 16.6099Z"
+                                        fill="#d3a167"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="option__item">
+                            <img
+                                class="option__img"
+                                src="./public/image/options/design.svg"
+                                alt=""
+                            />
+                            <h2 class="option__subtitle">Производство</h2>
+                            <p class="option__description">
+                                создадим для Вас авторский комплект изделий,
+                                подчеркивающий красоту стола и традиции вашего
+                                дома.
                             </p>
 
                             <a class="option__link" href="#"
@@ -321,21 +375,38 @@
             <!-- SECTION TEAM -->
             <section class="team">
                 <div class="container team__container">
-                    <h2 class="team__title">Наша команда</h2>
+                    <h2 class="team__title">
+                        Мы являемся проводниками в мире дизайна от картинки до
+                        ее реализации
+                    </h2>
                     <ul class="team__list">
                         <li class="team__item">
-                            <img
-                                class="team__avatar"
-                                src="./public/image/team/team1.jpeg"
-                                alt=""
-                            />
+                            <div class="team__avatar-wrapper">
+                                <img
+                                    class="team__avatar"
+                                    src="./public/image/team/team1.jpg"
+                                    alt=""
+                                />
+                                <div class="team__overlay">
+                                    <span class="team__name"
+                                        >Евгения Анатольевна Дьянова</span
+                                    >
+                                </div>
+                            </div>
                         </li>
                         <li class="team__item">
-                            <img
-                                class="team__avatar"
-                                src="./public/image/team/team2.jpeg"
-                                alt=""
-                            />
+                            <div class="team__avatar-wrapper">
+                                <img
+                                    class="team__avatar"
+                                    src="./public/image/team/team2.jpg"
+                                    alt=""
+                                />
+                                <div class="team__overlay">
+                                    <span class="team__name"
+                                        >Елена Андреевна Дегтерева</span
+                                    >
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -401,10 +472,10 @@
                     <h3 class="footer__question">Остались вопросы?</h3>
                     <p class="footer__description">Наши контактные данные:</p>
                     <p class="footer__description">
-                        Москва, ул. Ленина, д.40, 1-ый этаж
+                        г. Мосвква, Фрунзенская набережная д.16 к.1
                     </p>
-                    <p class="footer__description">8-925-341-23-23</p>
-                    <p class="footer__description">info@lofticore.com</p>
+                    <p class="footer__description">8 (915)-315-50-01</p>
+                    <p class="footer__description">Millenium-buro@mail.ru</p>
                     <h3 class="footer__follow">Наши социальные сети:</h3>
                     <ul class="footer__contacts">
                         <li class="footer__contact">
@@ -474,24 +545,29 @@
                     </ul>
                 </div>
                 <div class="footer__right">
-                    <form class="footer__form" action="">
+                    <form class="footer__form" id="telegramForm" action="">
                         <input
                             class="footer__input"
                             type="text"
+                            id="name"
                             placeholder="Имя..."
                         />
                         <input
                             class="footer__input"
                             type="text"
+                            id="contact"
                             placeholder="Контакты..."
                         />
                         <textarea
                             class="footer__textarea"
                             placeholder="Комментарий..."
-                            name=""
-                            id=""
+                            name="message"
+                            id="message"
                         ></textarea>
-                        <button class="footer__button">Связаться с нами</button>
+                        <button type="submit" class="footer__button">
+                            Связаться с нами
+                        </button>
+                        <div class="result" id="result"></div>
                     </form>
                 </div>
             </div>

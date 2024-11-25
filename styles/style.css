@@ -48,9 +48,9 @@
 }
 
 :root {
-    --buttonStart: #d3a167;
-    --buttonFinish: #894e17;
-    --latune: #a99933;
+    --buttonStart: #ccb56b;
+    --buttonFinish: #6e5a18;
+    --latune: #ccb56b;
     --grafit: #474a51;
 }
 
@@ -130,18 +130,53 @@
 }
 
 .about__right {
-    background-image: url('../public/image/bckg.jpg');
     display: flex;
     width: 50%;
     border-radius: 15px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.fade-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: fade 8s infinite;
+    opacity: 0;
+}
+
+.fade-image:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.fade-image:nth-child(2) {
+    animation-delay: 4s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 .about__title {
     font-family: 'MontserratRegular', 'sans-serif';
-    color: #d3a167;
+    color: var(--latune);
     margin-top: 0;
     font-size: 36px;
 }
@@ -156,6 +191,14 @@
     margin: 0;
 }
 
+.about__description1 {
+    font-family: 'MontserratLight', 'sans-serif';
+    color: white;
+    font-size: 24px;
+    max-width: 620px;
+    line-height: 1.4;
+    width: 100%;
+}
 .about__description-team {
     font-family: 'MontserratLight', 'sans-serif';
     display: flex;
@@ -375,7 +418,7 @@
 
 .areas__title {
     font-family: 'MontserratRegular', 'sans-serif';
-    color: #d09756;
+    color: #474a50;
     font-size: 42px;
     margin: 0;
     margin-bottom: 30px;
@@ -392,7 +435,13 @@
 .areas__item {
     display: flex;
     flex-direction: column;
+    cursor: pointer;
     border-radius: 15px;
+    transition: transform 0.6s ease;
+}
+
+.areas__item:hover {
+    transform: scale(1.2);
 }
 
 .areas__top {
@@ -431,7 +480,7 @@
 }
 
 .areas__bottom {
-    background-color: #474a50;
+    background-color: var(--latune);
     display: flex;
     justify-content: center;
     border-bottom-left-radius: 15px;
@@ -466,14 +515,14 @@
     font-family: 'MontserratRegular', 'sans-serif';
     font-size: 50px;
     font-weight: 600;
-    color: #d3a167;
+    color: var(--latune);
 }
 
 .project__description {
     font-family: 'MontserratRegular', 'sans-serif';
     font-size: 28px;
     font-weight: 600;
-    color: #d3a167;
+    color: var(--latune);
 }
 
 .project__gallery {
@@ -555,8 +604,10 @@
 .option__item {
     max-width: 360px;
     width: 100%;
+    padding: 10px;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -564,6 +615,7 @@
     font-family: 'MontserratRegular', 'sans-serif';
     text-align: center;
     color: white;
+    height: 50px;
     font-weight: 600;
     font-size: 30px;
 }
@@ -628,7 +680,7 @@
 }
 
 .reputation__item:not(:last-child) {
-    border-right: 2px solid #745f3d;
+    border-right: 2px solid var(--latune);
 }
 
 .reputation__item {
@@ -645,18 +697,17 @@
     font-family: 'MontserratLight', 'sans-serif';
     font-size: 34px;
     font-weight: 800;
-    color: #745f3d;
+    color: var(--latune);
 }
 
 .reputation__description {
     font-family: 'MontserratLight', 'sans-serif';
     font-size: 34px;
-    color: #745f3d;
+    color: var(--latune);
 }
 
 /* SECTION TEAM */
 .team {
-    /* background-image: url('../public/image/areas/Section.png'); */
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #474a50;
@@ -676,16 +727,72 @@
     gap: 50px;
 }
 
-.team__avatar {
-    max-width: 350px;
+/* Контейнер для фото */
+.team__avatar-wrapper {
+    position: relative;
+    display: inline-block;
+    max-width: 290px;
     width: 100%;
+    max-height: 440px;
+    height: 100%;
+    cursor: pointer;
     border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Фото */
+.team__avatar {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+/* Затемнение и текст */
+.team__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.6s ease;
+}
+
+/* Текст */
+.team__name {
+    color: white;
+    font-family: 'MontserratRegular', 'sans-serif';
+    font-size: 20px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.team__avatar-wrapper:hover .team__overlay {
+    opacity: 1;
+}
+
+.team__avatar-wrapper:hover .team__name {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.team__avatar-wrapper:hover .team__avatar {
+    transform: scale(1.1);
 }
 
 .team__title {
     font-family: 'MontserratRegular', 'sans-serif';
     font-size: 46px;
-    color: #d3a167;
+    text-align: center;
+    color: var(--latune);
 }
 
 /* SECTION SLOGAN */
@@ -823,9 +930,19 @@
     resize: vertical;
 }
 
+.result {
+    color: red;
+    font-size: 16px;
+    font-family: 'MontserratRegular', 'sans-serif';
+}
+
 .footer__button {
     font-family: 'MontserratLight', 'sans-serif';
-    background: linear-gradient(to top, #894e17, #d3a167);
+    background: linear-gradient(
+        to top,
+        var(--buttonFinish),
+        var(--buttonStart)
+    );
     font-size: 22px;
     padding: 15px 20px;
     border: none;
