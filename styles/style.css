@@ -137,6 +137,13 @@
     overflow: hidden;
 }
 
+.about__social {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
 .fade-image {
     position: absolute;
     top: 0;
@@ -444,14 +451,60 @@
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     width: 260px;
-    height: 299px;
+    height: 100%;
 }
 
 .areas__first {
-    background-image: url('../public/image/areas/mood1:1.jpg');
+    background-image: url('../public/image/scirt/scirt1.jpeg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+/* video */
+.video__wrapper {
+    position: relative;
+    max-width: 260px;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.areas__video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video__controls {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 8px;
+    align-items: center;
+    gap: 10px;
+    z-index: 10;
+}
+
+.video__controls input[type='range'] {
+    flex: 1;
+}
+
+.video__play-pause {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.video__wrapper:hover .video__controls {
+    display: flex;
 }
 
 .areas__second {
@@ -462,7 +515,7 @@
 }
 
 .areas__third {
-    background-image: url('../public/image/areas/mood3:3.jpg');
+    background-image: url('../public/image/scirt/scirt2.jpeg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -708,6 +761,7 @@
 
 .reputation__garant {
     font-family: 'MontserratRegular', 'sans-serif';
+    line-height: 50px;
     font-size: 28px;
     font-weight: 600;
     color: var(--latune);
