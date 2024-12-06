@@ -65,6 +65,7 @@
     width: 100%;
     padding: 0 15px;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .header__container {
@@ -196,6 +197,7 @@
     line-height: 1.4;
     width: 100%;
     margin: 0;
+    margin-bottom: 15px;
 }
 
 .about__description:last-of-type {
@@ -433,6 +435,11 @@
     list-style: none;
     gap: 80px;
     padding: 0;
+    margin-bottom: 50px;
+}
+
+.link-style {
+    text-decoration: none;
 }
 
 .areas__item {
@@ -660,6 +667,10 @@
     align-items: center;
 }
 
+.button-margin {
+    margin: 20px;
+}
+
 .option__subtitle {
     font-family: 'MontserratRegular', 'sans-serif';
     text-align: center;
@@ -709,27 +720,109 @@
 /* SECTION REPUTATION */
 
 .reputation {
-    /* background-image: url('../public/image/reputation/background.png'); */
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: white;
+    box-sizing: border-box;
 }
 
 .reputation__container {
+    background-color: white;
     padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 40px;
+    box-sizing: border-box;
+}
+
+/* slider */
+.slider-container {
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 550px;
+}
+
+.image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.before {
+    background-image: url('../public/image/carusel/picture3.jpg'); /* Ваше изображение "до" */
+    z-index: 1;
+}
+
+.after {
+    background-image: url('../public/image/carusel/picture2.jpg'); /* Ваше изображение "после" */
+    z-index: 2;
+    width: 50%; /* Начальная ширина шторки */
+    overflow: hidden;
+}
+
+.divider {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background-color: #fff;
+    z-index: 3;
+    cursor: ew-resize;
+    transform: translateX(-50%);
+}
+
+.handle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    cursor: ew-resize;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.arrow {
+    font-size: 16px;
+    color: #666;
+    pointer-events: none;
+    margin: 0 4px;
+}
+
+/* slider */
+
+.api-map {
+    width: 62%;
+    min-height: 250px;
+    box-sizing: border-box;
 }
 
 .reputation__list {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-}
-
-.project__description {
 }
 
 .reputation__item:not(:last-child) {
@@ -788,6 +881,11 @@
     list-style: none;
     padding-left: 0;
     gap: 50px;
+}
+
+.team__item {
+    display: flex;
+    flex-direction: column;
 }
 
 /* Контейнер для фото */
@@ -849,6 +947,45 @@
 
 .team__avatar-wrapper:hover .team__avatar {
     transform: scale(1.1);
+}
+
+.team__contacts {
+    font-family: 'MontserratRegular', 'sans-serif';
+    color: white;
+    font-size: 24px;
+    align-self: center;
+    display: flex;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.contacts__icon path {
+    transition: fill 0.3s ease;
+}
+
+.team__contacts:hover .contacts__icon path {
+    fill: var(--latune);
+}
+
+.contacts-margin {
+    margin-bottom: 15px;
+}
+
+.center {
+    justify-content: center;
+}
+
+.contacts__link {
+    font-family: 'MontserratRegular', 'sans-serif';
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.team__contacts:hover .contacts__link {
+    color: var(--latune);
 }
 
 .team__title {
