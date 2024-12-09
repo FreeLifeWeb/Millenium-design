@@ -54,3 +54,10 @@ function openModal(message) {
 document.getElementById('closeModal').addEventListener('click', function () {
     document.getElementById('modal').classList.remove('visible');
 });
+
+window.addEventListener('click', function (event) {
+    const modal = document.getElementById('modal');
+    if (event.target === modal) {
+        modal.classList.remove('visible');
+    }
+});
