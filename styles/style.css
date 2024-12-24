@@ -1,45 +1,36 @@
 @font-face {
-    font-family: 'MontserratLight';
-    src: url('../fonts/MontserratLight.eot');
-    src: url('../fonts/MontserratLight.woff2') format('woff2'),
-        url('../fonts/MontserratLight.woff') format('woff');
+    font-family: 'PrataRegular';
+    src: url('../fonts/PrataRegular.eot');
+    src: url('../fonts/PrataRegular.woff2') format('woff2'),
+        url('../fonts/PrataRegular.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'MontserratBold';
-    src: url('../fonts/MontserratBold.eot');
-    src: url('../fonts/MontserratBold.woff2') format('woff2'),
-        url('../fonts/MontserratBold.woff') format('woff');
+    font-family: 'RalewayBold';
+    src: url('../fonts/RalewayBold.eot');
+    src: url('../fonts/RalewayBold.woff2') format('woff2'),
+        url('../fonts/RalewayBold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'MontserratRegular';
-    src: url('../fonts/MontserratRegular.eot');
-    src: url('../fonts/MontserratRegular.woff2') format('woff2'),
-        url('../fonts/MontserratRegular.woff') format('woff');
+    font-family: 'RalewayRegular';
+    src: url('../fonts/RalewayRegular.eot');
+    src: url('../fonts/RalewayRegular.woff2') format('woff2'),
+        url('../fonts/RalewayRegular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'MontserratMedium';
-    src: url('../fonts/MontserratMedium.eot');
-    src: url('../fonts/MontserratMedium.woff2') format('woff2'),
-        url('../fonts/MontserratMedium.woff') format('woff');
+    font-family: 'RalewayMedium';
+    src: url('../fonts/RalewayMedium.eot');
+    src: url('../fonts/RalewayMedium.woff2') format('woff2'),
+        url('../fonts/RalewayMedium.woff') format('woff');
     font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'MontserratExtraBold';
-    src: url('../fonts/MontserratExtraBold.eot');
-    src: url('../fonts/MontserratExtraBold.woff2') format('woff2'),
-        url('../fonts/MontserratExtraBold.woff') format('woff');
-    font-weight: 800;
     font-style: normal;
 }
 
@@ -99,7 +90,7 @@
 }
 
 .header__link {
-    font-family: 'MontserratRegular', 'sans-serif';
+    font-family: 'PrataRegular', 'sans-serif';
     text-decoration: none;
     color: white;
     font-size: 28px;
@@ -127,7 +118,6 @@
 .about__left {
     display: flex;
     width: 50%;
-    align-items: center;
     flex-direction: column;
 }
 
@@ -184,19 +174,18 @@
 }
 
 .about__title {
-    font-family: 'MontserratRegular', 'sans-serif';
+    font-family: 'PrataRegular', 'sans-serif';
     color: var(--latune);
     margin-top: 0;
     font-size: 36px;
 }
 
 .about__description {
-    font-family: 'MontserratLight', 'sans-serif';
+    font-family: 'RalewayMedium', 'sans-serif';
     color: white;
     font-size: 24px;
     max-width: 620px;
     line-height: 1.4;
-    text-align: center;
     width: 100%;
     margin: 0;
     margin-bottom: 15px;
@@ -220,7 +209,7 @@
 }
 
 .before__contacts {
-    font-family: 'MontserratLight', 'sans-serif';
+    font-family: 'PrataRegular', 'sans-serif';
     background: linear-gradient(
         to top,
         var(--buttonFinish),
@@ -233,6 +222,7 @@
     color: white;
     cursor: pointer;
     transition: background 0.7s ease;
+    margin-bottom: 40px;
 }
 
 .before__contacts:hover {
@@ -244,7 +234,7 @@
 }
 
 .about__contacts {
-    font-family: 'MontserratLight', 'sans-serif';
+    font-family: 'RalewayMedium', 'sans-serif';
     background: linear-gradient(
         to top,
         var(--buttonFinish),
@@ -364,7 +354,7 @@
 
 .about__controls-previous {
     position: relative;
-    font-family: 'MontserratLight', 'sans-serif';
+    font-family: 'PrataRegular', 'sans-serif';
 }
 
 .about__controls-previous::before {
@@ -388,7 +378,7 @@
 
 .about__controls-next {
     position: relative;
-    font-family: 'MontserratLight', 'sans-serif';
+    font-family: 'PrataRegular', 'sans-serif';
 }
 
 .about__controls-next::before {
@@ -448,7 +438,7 @@
 }
 
 .areas__title {
-    font-family: 'MontserratRegular', 'sans-serif';
+    font-family: 'PrataRegular', 'sans-serif';
     color: #474a50;
     font-size: 42px;
     margin: 0;
@@ -586,6 +576,20 @@
     margin: 0;
 }
 
+.project__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.areas__description {
+    font-family: 'PrataRegular', 'sans-serif';
+    font-size: 30px;
+    color: var(--grafit);
+}
+
 .project__container {
     background-color: #474a50;
     display: flex;
@@ -594,7 +598,7 @@
 }
 
 .project__title {
-    font-family: 'MontserratRegular', 'sans-serif';
+    font-family: 'PrataRegular', 'sans-serif';
     font-size: 50px;
     font-weight: 600;
     color: var(--latune);
@@ -607,11 +611,49 @@
     color: var(--latune);
 }
 
-.project__gallery {
+.project__top {
     display: flex;
-    gap: 20px;
     width: 100%;
     flex-wrap: wrap;
+}
+
+.project-title-position {
+    text-align: center;
+}
+
+.project__about {
+    font-family: 'RalewayMedium', 'sans-serif';
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: rgb(193, 185, 185);
+}
+
+.project__gallery {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.project__subtitle {
+    font-family: 'PrataRegular', 'sans-serif';
+    font-size: 25px;
+    color: rgb(193, 185, 185);
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+.project__par {
+    font-family: 'RalewayMedium', 'sans-serif';
+    font-size: 16px;
+    color: rgb(193, 185, 185);
+    margin: 0;
+}
+
+.project__img {
+    border-radius: 15px;
 }
 
 .project__section {
@@ -660,6 +702,75 @@
     transform: scale(1.1);
 }
 
+/* how work */
+.howwork__title {
+    font-family: 'PrataRegular', 'sans-serif';
+    text-align: center;
+    color: var(--latune);
+    height: 50px;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.container {
+    display: flex;
+}
+
+.column {
+    position: relative;
+}
+
+.item {
+    position: relative;
+    padding: 10px 30px 10px 10px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.number {
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: black;
+    color: white;
+}
+
+.line {
+    position: absolute;
+    left: 35%; /* Отступ от цифры */
+    top: 70%;
+    width: 3px;
+    height: calc(100%); /* Высота линии */
+    background-color: black; /* Цвет линии */
+}
+
+.line-right {
+    position: absolute;
+    left: 75%;
+    top: 50%;
+    width: 40px;
+    height: 2px;
+    background-color: black;
+    transform: translateX(-50%);
+}
+
+.description {
+    padding-left: 20px;
+    margin-bottom: 28px;
+}
+
+.work__title {
+    margin: 0;
+    color: white;
+}
+
+.work__description {
+    margin: 0;
+    color: white;
+}
+
 /* SECTION OPTION */
 
 .option {
@@ -693,21 +804,25 @@
     align-items: center;
 }
 
-.button-margin {
+.button-style {
     margin: 20px;
+    padding: 25px 25px;
+    font-family: 'PrataRegular', 'sans-serif';
+    font-size: 40px;
 }
 
 .option__subtitle {
-    font-family: 'MontserratRegular', 'sans-serif';
+    font-family: 'PrataRegular', 'sans-serif';
     text-align: center;
-    color: white;
+    color: var(--latune);
     height: 50px;
+    margin-bottom: 0;
     font-weight: 600;
     font-size: 30px;
 }
 
 .option__description {
-    font-family: 'MontserratLight', 'sans-serif';
+    font-family: 'RalewayMedium', 'sans-serif';
     color: white;
     font-size: 20px;
     line-height: 1.5;
@@ -763,7 +878,7 @@
 
 .reputation-title {
     margin: 0;
-    font-family: 'MontserratRegular', 'sans-serif';
+    font-family: 'PrataRegular', 'sans-serif';
     color: #474a50;
     font-size: 42px;
 }
@@ -875,20 +990,20 @@
 }
 
 .reputation__statistic {
-    font-family: 'MontserratLight', 'sans-serif';
+    font-family: 'RalewayMedium', 'sans-serif';
     font-size: 34px;
     font-weight: 800;
     color: var(--latune);
 }
 
 .reputation__description {
-    font-family: 'MontserratLight', 'sans-serif';
+    font-family: 'RalewayMedium', 'sans-serif';
     font-size: 34px;
     color: var(--latune);
 }
 
 .reputation__garant {
-    font-family: 'MontserratRegular', 'sans-serif';
+    font-family: 'RalewayMedium', 'sans-serif';
     line-height: 50px;
     font-size: 28px;
     font-weight: 600;
@@ -1060,7 +1175,7 @@
 }
 
 .team__title {
-    font-family: 'MontserratRegular', 'sans-serif';
+    font-family: 'PrataRegular', 'sans-serif';
     font-size: 46px;
     text-align: center;
     color: var(--latune);
@@ -1264,7 +1379,7 @@
 }
 
 .modal-content {
-    background-color: #fff;
+    background-color: black;
     margin: auto;
     padding: 30px;
     border: 1px solid #888;
@@ -1289,4 +1404,218 @@
 .close:focus {
     color: #000;
     text-decoration: none;
+}
+
+/* complete content */
+
+.complete {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.complete.hidden-content {
+    display: none;
+}
+
+.complete__title {
+    font-family: 'PrataRegular', 'sans-serif';
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--latune);
+}
+
+.complete__cards {
+    width: 100%;
+}
+
+.complete__list {
+    display: flex;
+    padding: 0;
+    gap: 40px;
+    list-style: none;
+}
+
+.complete__card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgb(81, 79, 79);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.complete__subtitle {
+    color: white;
+}
+
+.complete__description {
+    color: white;
+    text-align: start;
+}
+
+.complete__ideal {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.complete__block1 {
+    display: flex;
+    width: 100%;
+    margin-bottom: 65px;
+}
+
+.complete__quadro {
+    padding: 45px 150px 45px 10px;
+    background-color: rgb(81, 79, 79);
+    color: white;
+    font-size: 20px;
+}
+
+.complete__bottom {
+    width: 100%;
+}
+
+.complete__professional {
+    font-family: 'PrataRegular', 'sans-serif';
+    font-size: 18px;
+    text-align: start;
+    padding-left: 10px;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.complete__responsibility {
+    font-family: 'PrataRegular', 'sans-serif';
+    font-size: 16px;
+    text-align: start;
+    padding-left: 10px;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 18px;
+    color: white;
+}
+
+.complete__garant {
+    width: 100%;
+    margin: 0;
+    border-bottom: 2px solid rgb(81, 79, 79);
+}
+
+.complete__quadro2 {
+    padding: 45px 250px 45px 10px;
+    background-color: rgb(81, 79, 79);
+    color: white;
+    font-size: 20px;
+}
+
+.complete__quadro3 {
+    padding: 45px 350px 45px 10px;
+    background-color: rgb(81, 79, 79);
+    color: white;
+    font-size: 20px;
+}
+
+.column {
+    position: relative;
+}
+
+.item1 {
+    position: relative;
+    padding: 10px 30px 10px 10px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.number1 {
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: rgb(81, 79, 79);
+    color: white;
+}
+
+.line1 {
+    position: absolute;
+    left: 35%; /* Отступ от цифры */
+    top: 70%;
+    width: 3px;
+    height: calc(100%); /* Высота линии */
+    background-color: rgb(81, 79, 79); /* Цвет линии */
+}
+
+.line-right1 {
+    position: absolute;
+    left: 75%;
+    top: 50%;
+    width: 40px;
+    height: 2px;
+    background-color: rgb(81, 79, 79);
+    transform: translateX(-50%);
+}
+
+.description1 {
+    padding-left: 20px;
+    margin-bottom: 28px;
+}
+
+.description1:not(:first-child) {
+    margin-top: 50px;
+}
+
+.work__title1 {
+    margin: 0;
+    text-align: start;
+    color: white;
+}
+
+.complete__designe-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.complete__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.complete__designe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.complete__title-center {
+    align-self: center;
+}
+
+.complete__img {
+    background-color: rgb(81, 79, 79);
+    padding: 25px 25px;
+    border-radius: 5px;
+    align-self: start;
+    margin-bottom: 20px;
+}
+
+.complete__point {
+    align-self: flex-start;
+    font-family: 'PrataRegular', 'sans-serif';
+    font-size: 18px;
+    color: white;
+}
+
+.complete__par {
+    align-self: flex-start;
+    font-family: 'PrataRegular', 'sans-serif';
+    font-size: 16px;
+    color: white;
+    margin-bottom: 20px;
 }
