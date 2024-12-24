@@ -1450,6 +1450,7 @@
 
 .complete__subtitle {
     color: white;
+    text-align: start;
 }
 
 .complete__description {
