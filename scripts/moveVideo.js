@@ -23,13 +23,13 @@ document.addEventListener('DOMContentLoaded', () => {
         // Volume control
         volumeSlider.addEventListener('input', (e) => {
             video.volume = e.target.value; // Устанавливаем громкость
-            video.muted = false; // Включаем звук при взаимодействии с регулятором
+            video.muted = true; // Включаем звук при взаимодействии с регулятором
         });
 
         // Снимаем mute при нажатии на play, если пользователь взаимодействует
-        wrapper.addEventListener('mouseenter', () => {
-            video.muted = false; // Отключаем mute при наведении
-        });
+        // wrapper.addEventListener('mouseenter', () => {
+        //     video.muted = false; // Отключаем mute при наведении
+        // });
 
         // Включение цикла воспроизведения
         video.addEventListener('ended', () => {

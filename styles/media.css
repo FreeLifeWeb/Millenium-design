@@ -1,0 +1,82 @@
+@media screen and (max-width: 1400px) {
+    .header__menu {
+        display: none;
+    }
+
+    .container__about {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .about__right {
+        display: flex;
+        width: 100%;
+        height: 1300px;
+        border-radius: 15px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .about__left {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .about__description {
+        font-family: 'RalewayMedium', 'sans-serif';
+        color: white;
+        font-size: 24px;
+        max-width: 1300px;
+        line-height: 1.4;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    .areas__first {
+        min-height: 410px;
+    }
+
+    .areas__third {
+        min-height: 410px;
+    }
+
+    .areas__list {
+        gap: 60px;
+    }
+
+    .areas__description {
+        text-align: center;
+    }
+
+    .project__title {
+        text-align: center;
+    }
+
+    .option__list {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .footer__container {
+        flex-direction: column;
+    }
+
+    .footer__left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__container {
+        flex-direction: column;
+    }
+
+    .services__list {
+        flex-wrap: wrap;
+    }
+}
