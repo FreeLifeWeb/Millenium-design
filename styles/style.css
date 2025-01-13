@@ -104,6 +104,10 @@
 
 /* MAIN */
 
+main {
+    background-color: black;
+}
+
 /* SECTION ABOUT */
 
 .container__about {
@@ -177,6 +181,7 @@
     font-family: 'PrataRegular', 'sans-serif';
     color: var(--latune);
     margin-top: 0;
+    margin-bottom: 40px;
     font-size: 36px;
 }
 
@@ -478,7 +483,7 @@
 }
 
 .areas__first {
-    background-image: url('../public/image/scirt/scirt1.jpeg');
+    background-image: url('../public/image/scirt/scirt1.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -538,14 +543,7 @@
 }
 
 .areas__third {
-    background-image: url('../public/image/scirt/scirt2.jpeg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.areas__fourth {
-    background-image: url('../public/image/areas/mood4:4.jpg');
+    background-image: url('../public/image/scirt/scirt2.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -623,6 +621,7 @@
 
 .project__about {
     font-family: 'RalewayMedium', 'sans-serif';
+    text-align: center;
     font-size: 28px;
     font-weight: 600;
     margin-bottom: 40px;
@@ -911,12 +910,12 @@
 }
 
 .before {
-    background-image: url('../public/image/carusel/picture3.jpg'); /* Ваше изображение "до" */
+    background-image: url('../public/image/carusel/before.jpg'); /* изображение "до" */
     z-index: 1;
 }
 
 .after {
-    background-image: url('../public/image/carusel/picture2.jpg'); /* Ваше изображение "после" */
+    background-image: url('../public/image/carusel/before.jpg'); /* изображение "после" */
     z-index: 2;
     width: 50%; /* Начальная ширина шторки */
     overflow: hidden;
@@ -953,7 +952,7 @@
 }
 
 .arrow {
-    font-size: 16px;
+    font-size: 15px;
     color: #666;
     pointer-events: none;
     margin: 0 4px;
@@ -1181,6 +1180,9 @@
     color: var(--latune);
 }
 
+.team__title:last-of-type {
+    margin-top: 0;
+}
 /* FOOTER */
 .footer {
     background-color: black;
@@ -1383,7 +1385,7 @@
     margin: auto;
     padding: 30px;
     border: 1px solid #888;
-    width: 60%;
+    width: 90%;
     max-height: 90%;
     overflow-y: auto;
     text-align: center;
@@ -1402,7 +1404,7 @@
 
 .close:hover,
 .close:focus {
-    color: #000;
+    color: var(--latune);
     text-decoration: none;
 }
 
@@ -1619,4 +1621,242 @@
     font-size: 16px;
     color: white;
     margin-bottom: 20px;
+}
+
+/* decoration */
+
+.decoration1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.decoration1.hidden-content {
+    display: none;
+}
+
+.decoration__title {
+    font-family: 'PrataRegular', 'sans-serif';
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--latune);
+}
+
+.decoration__description {
+    color: white;
+    font-size: 23px;
+    text-align: center;
+}
+
+.decoration__description1 {
+    color: white;
+    font-size: 23px;
+    text-align: start;
+}
+
+.decoration__list {
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.decoration__item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.decoration__subtitle {
+    font-family: 'PrataRegular', 'sans-serif';
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--latune);
+}
+
+.decoration__block {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+}
+
+.decoration__cards {
+    display: flex;
+    list-style: none;
+
+    gap: 30px;
+    padding: 0;
+    width: 100%;
+}
+
+.decoration__card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: rgb(81, 79, 79);
+    padding: 25px 25px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.decoration__block-style {
+    flex: 1;
+    background-color: rgb(81, 79, 79);
+    padding: 25px 25px;
+    border-radius: 5px;
+}
+
+/* authors-supervision */
+.supervision {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.supervision.hidden-content {
+    display: none;
+}
+
+.authors-title {
+    font-family: 'PrataRegular', 'sans-serif';
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--latune);
+}
+
+.authors-list {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    gap: 30px;
+}
+
+.authors-item {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.authors-subtitle {
+    font-family: 'PrataRegular', 'sans-serif';
+    font-size: 22px;
+    font-weight: 600;
+    text-align: start;
+    color: var(--latune);
+}
+
+.authors-description {
+    color: white;
+    font-size: 23px;
+    text-align: start;
+}
+
+.authors-container {
+    display: flex;
+    justify-content: center;
+}
+
+.column {
+    position: relative;
+}
+
+.item {
+    position: relative;
+    padding: 10px 30px 10px 10px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.authors-number {
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: rgb(81, 79, 79);
+    color: white;
+}
+
+.authors-line {
+    position: absolute;
+    left: 35%; /* Отступ от цифры */
+    top: 70%;
+    width: 3px;
+    height: calc(100%); /* Высота линии */
+    background-color: rgb(81, 79, 79); /* Цвет линии */
+}
+
+.authors-line-right {
+    position: absolute;
+    left: 75%;
+    top: 50%;
+    width: 40px;
+    height: 2px;
+    background-color: rgb(81, 79, 79);
+    transform: translateX(-50%);
+}
+
+.description {
+    padding-left: 20px;
+    margin-bottom: 28px;
+}
+
+.work__title {
+    margin: 0;
+    color: white;
+}
+
+.work__description {
+    margin: 0;
+    color: white;
+}
+
+.description2 {
+    padding-left: 20px;
+    text-align: start;
+    margin-bottom: 20px;
+}
+
+.work__description1 {
+    font-size: 22px;
+    margin: 0;
+    color: white;
+}
+
+/* production */
+
+.production {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.production.hidden-content {
+    display: none;
+}
+
+.production__par {
+    font-family: 'PrataRegular', 'sans-serif';
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.production__subtitle {
+    font-family: 'PrataRegular', 'sans-serif';
+    color: var(--latune);
+    font-size: 18px;
 }
