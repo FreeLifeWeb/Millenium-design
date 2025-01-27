@@ -46,7 +46,7 @@ document
 
 function openModal(message) {
     const modal = document.getElementById('modal');
-    const modalMessage = document.getElementById('modalMessage');
+    const modalMessage = document.getElementById('modalDynamicContent');
     modalMessage.innerText = message;
     modal.classList.add('visible');
 }

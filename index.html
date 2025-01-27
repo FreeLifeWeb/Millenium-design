@@ -52,6 +52,7 @@
         <script src="./scripts/serviceModal.js" defer></script>
         <script src="./scripts/sendMessage.js" defer></script>
         <script src="./scripts/slider.js" defer></script>
+        <script src="./scripts/burger.js" defer></script>
         <!-- Подключение API Яндекс.Карт -->
         <script
             defer
@@ -70,6 +71,11 @@
                     class="header__label"
                     alt="Логотип компании Millenium"
                 />
+                <!-- <div class="burger-menu" id="burgerMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div> -->
                 <nav class="heder__navigation" aria-label="Главное меню">
                     <ul class="header__menu">
                         <li class="header__submenu">
@@ -337,7 +343,7 @@
                         Создаём пространство, где живёт вдохновение
                     </p>
                     <div class="project__gallery">
-                        <div>
+                        <div class="project__gallery-block">
                             <img
                                 class="project__img"
                                 src="./public/image/gallery/kids-room.png"
@@ -345,10 +351,10 @@
                             />
                             <h3 class="project__subtitle">Ар деко</h3>
                             <p class="project__par">
-                                Простой, чистый и функционнальный стиль.
+                                Простой и функционнальный стиль.
                             </p>
                         </div>
-                        <div>
+                        <div class="project__gallery-block">
                             <img
                                 class="project__img"
                                 src="./public/image/gallery/main-room.png"
@@ -359,7 +365,7 @@
                                 Современный дизайнерский подход.
                             </p>
                         </div>
-                        <div>
+                        <div class="project__gallery-block">
                             <img
                                 class="project__img"
                                 src="./public/image/gallery/master-room.png"
@@ -1192,7 +1198,9 @@
                                 <p class="complete__professional">
                                     Профессионалы
                                 </p>
-                                <p class="complete__responsibility">
+                                <p
+                                    class="complete__responsibility complete__response1"
+                                >
                                     Мы берем на себя всю ответственность
                                 </p>
                                 <p class="complete__garant"></p>
@@ -1205,7 +1213,9 @@
                             </div>
                             <div class="complete__bottom">
                                 <p class="complete__professional">Опыт</p>
-                                <p class="complete__responsibility">
+                                <p
+                                    class="complete__responsibility complete__response2"
+                                >
                                     Наши знания и опыт гарантируют качественный
                                     результат.
                                 </p>
@@ -1219,7 +1229,9 @@
                             </div>
                             <div class="complete__bottom">
                                 <p class="complete__professional">Результат</p>
-                                <p class="complete__responsibility">
+                                <p
+                                    class="complete__responsibility complete__response3"
+                                >
                                     Ваш дом станет уютным и комфортным
                                 </p>
                                 <p class="complete__garant"></p>
@@ -1493,7 +1505,7 @@
                             </div>
                             <div class="column">
                                 <div class="description2">
-                                    <h2 class="work__title">
+                                    <h2 class="work__title4">
                                         Контроль документации
                                     </h2>
                                     <p class="work__description1">
@@ -1503,7 +1515,7 @@
                                     </p>
                                 </div>
                                 <div class="description2">
-                                    <h2 class="work__title">
+                                    <h2 class="work__title4">
                                         Визуальный осмотр
                                     </h2>
                                     <p class="work__description1">
@@ -1513,7 +1525,7 @@
                                     </p>
                                 </div>
                                 <div class="description2">
-                                    <h2 class="work__title">
+                                    <h2 class="work__title4">
                                         Контроль качества
                                     </h2>
                                     <p class="work__description1">
@@ -1608,25 +1620,25 @@
                             </div>
                             <div class="column">
                                 <div class="description2">
-                                    <h2 class="work__title">Эскиз</h2>
+                                    <h2 class="work__title4">Эскиз</h2>
                                     <p class="work__description1">
                                         Разработка индивидуального дизайна
                                     </p>
                                 </div>
                                 <div class="description2">
-                                    <h2 class="work__title">Прототип</h2>
+                                    <h2 class="work__title4">Прототип</h2>
                                     <p class="work__description1">
                                         Создание образца изделия
                                     </p>
                                 </div>
                                 <div class="description2">
-                                    <h2 class="work__title">Производство</h2>
+                                    <h2 class="work__title4">Производство</h2>
                                     <p class="work__description1">
                                         Вручную изготовленные изделия
                                     </p>
                                 </div>
                                 <div class="description2">
-                                    <h2 class="work__title">
+                                    <h2 class="work__title4">
                                         Финишная отделка
                                     </h2>
                                     <p class="work__description1">
