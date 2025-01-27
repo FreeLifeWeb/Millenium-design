@@ -305,7 +305,7 @@
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 435px) {
     .header__label {
         height: 76px;
     }
