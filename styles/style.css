@@ -939,7 +939,7 @@ main {
 }
 
 .after {
-    background-image: url('../public/image/carusel/before.jpg'); /* изображение "после" */
+    background-image: url('../public/image/carusel/after.jpg'); /* изображение "после" */
     z-index: 2;
     width: 50%; /* Начальная ширина шторки */
     overflow: hidden;
@@ -1418,6 +1418,11 @@ q .footer__menu {
     position: relative;
 }
 
+.white-text {
+    color: white;
+    font-size: 18px;
+}
+
 .close {
     color: #aaa;
     float: right;
@@ -1796,7 +1801,7 @@ q .footer__menu {
     position: relative;
 }
 
-.item {
+.item-modal {
     position: relative;
     padding: 10px 30px 10px 10px;
     text-align: center;
@@ -1812,10 +1817,19 @@ q .footer__menu {
     color: white;
 }
 
+.authors-line1 {
+    position: absolute;
+    left: 35%; /* Отступ от цифры */
+    top: 105%;
+    width: 3px;
+    height: calc(100%); /* Высота линии */
+    background-color: rgb(81, 79, 79); /* Цвет линии */
+}
+
 .authors-line {
     position: absolute;
     left: 35%; /* Отступ от цифры */
-    top: 70%;
+    top: 105%;
     width: 3px;
     height: calc(100%); /* Высота линии */
     background-color: rgb(81, 79, 79); /* Цвет линии */
@@ -1838,7 +1852,14 @@ q .footer__menu {
 
 .work__title4 {
     margin: 0;
+    font-size: 20px;
     color: white;
+}
+
+.work__title-desc {
+    color: white;
+    margin: 0;
+    text-align: start;
 }
 
 .work__description {
@@ -1853,7 +1874,7 @@ q .footer__menu {
 }
 
 .work__description1 {
-    font-size: 22px;
+    font-size: 20px;
     margin: 0;
     color: white;
 }
@@ -1884,4 +1905,12 @@ q .footer__menu {
     font-family: 'PrataRegular', 'sans-serif';
     color: var(--latune);
     font-size: 18px;
+}
+
+.btn_cns {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    margin: 0;
 }
