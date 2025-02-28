@@ -3,6 +3,7 @@ document
     .addEventListener('submit', async function (e) {
         e.preventDefault();
 
+        // const botToken = '7699405310:AAGwUVyYMZE2Jax9D5KjpQi_yyf_aJ4F0aU';
         const botToken = '7699405310:AAGwUVyYMZE2Jax9D5KjpQi_yyf_aJ4F0aU';
         const chatId = '674053589';
         const name = document.getElementById('name').value.trim();
@@ -48,6 +49,7 @@ function openModal(message) {
     const modal = document.getElementById('modal');
     const modalMessage = document.getElementById('modalDynamicContent');
     modalMessage.innerText = message;
+    modalMessage.classList.add('white-text');
     modal.classList.add('visible');
 }
 
